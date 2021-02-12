@@ -6,7 +6,18 @@
 
 import { sync } from './dom-utilities';
 
+const submitButton = document.getElementById('button-main');
+
+submitButton.addEventListener('click', () => {});
+
 const syncInit = () => {
-    // initialize function here for listeners and get dom elements.
-    // sync takes dom elements > values
-}
+    for (let i = 1; i < 14; i++) {
+        const inputElement = document.getElementById(`input-${i}`);
+        const spanElement = document.getElementById(`blank-${i}`);
+        inputElement.placeholder = spanElement.textContent;
+    }
+};
+
+syncInit();
+
+document.addEventListener('DOMContentLoaded', syncInit());
