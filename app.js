@@ -6,3 +6,7 @@
 
 import { sync } from './dom-utilities';
 
+const syncInit = () => {
+    // initialize function here for listeners and get dom elements.
+    // sync takes dom elements > values
+}
