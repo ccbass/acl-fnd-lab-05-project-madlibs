@@ -3,6 +3,7 @@
 import { sync } from './dom-utilities.js';
 
 const submitButton = document.getElementById('button-main');
+const paragraph = document.getElementById('libs-paragraph');
 
 // initialize state
 
@@ -24,7 +25,10 @@ submitButton.addEventListener('click', () => {
         const inputElement = document.getElementById(`input-${i}`);
         const spanElement = document.getElementById(`blank-${i}`);
         sync(inputElement, spanElement);
-    };
+    }
 
+    paragraph.style.display = 'flex';
     // add the hidden class to the madlib story section 
 });
+
+

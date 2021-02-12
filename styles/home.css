@@ -1,2 +1,24 @@
 /* add home page styles here */
 
+#libs-paragraph {
+    height: 30vh;
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#input-container {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.libs-container {
+    display: flex;
+
+}
