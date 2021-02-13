@@ -26,7 +26,7 @@ submitButton.addEventListener('click', () => {
         const spanElement = document.getElementById(`blank-${i}`);
         sync(inputElement, spanElement);
     }
-
+    
     paragraph.style.display = 'flex';
     // add the hidden class to the madlib story section 
 });
