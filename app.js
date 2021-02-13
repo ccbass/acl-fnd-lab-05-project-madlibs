@@ -21,14 +21,13 @@ syncInit();
 
 submitButton.addEventListener('click', () => {
     for (let i = 1; i < 14; i++) {
-        // check that the inputs are actually filled out
+        // TODO: check that the inputs are actually filled out
         const inputElement = document.getElementById(`input-${i}`);
         const spanElement = document.getElementById(`blank-${i}`);
         sync(inputElement, spanElement);
     }
     
     paragraph.style.display = 'flex';
-    // add the hidden class to the madlib story section 
 });
 
 
