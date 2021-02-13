@@ -12,7 +12,7 @@ const syncInit = () => {
         const inputElement = document.getElementById(`input-${i}`);
         const spanElement = document.getElementById(`blank-${i}`);
         inputElement.placeholder = spanElement.textContent;
-    };
+    }
 };
 
 syncInit();
