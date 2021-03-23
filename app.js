@@ -2,6 +2,7 @@
 
 import { sync } from './dom-utilities.js';
 
+ 
 const submitButton = document.getElementById('button-main');
 const paragraph = document.getElementById('libs-paragraph');
 
@@ -19,15 +20,22 @@ syncInit();
 
 // set event listeners to update state and DOM
 
-submitButton.addEventListener('click', () => {
+
+const handleClick = () => {
     for (let i = 1; i < 14; i++) {
         // TODO: check that the inputs are actually filled out
         const inputElement = document.getElementById(`input-${i}`);
         const spanElement = document.getElementById(`blank-${i}`);
         sync(inputElement, spanElement);
+   
     }
     
     paragraph.style.display = 'flex';
-});
+};
+
+
+
+
+submitButton.addEventListener('click', handleClick);
 
 
